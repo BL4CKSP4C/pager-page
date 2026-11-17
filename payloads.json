@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-17T11:09:09.869Z",
+  "fetchedAt": "2026-11-17T20:27:09.590Z",
   "categories": {
     "alerts": {
       "name": "alerts",
@@ -27805,6 +27805,31 @@
   "totalRingtones": 101,
   "pullRequests": [
     {
+      "number": 400,
+      "title": "Add Remote ID Radar payload",
+      "state": "open",
+      "merged": false,
+      "author": "justcallmekoko",
+      "authorAvatar": "https://avatars.githubusercontent.com/u/25190487?v=4",
+      "authorUrl": "https://github.com/justcallmekoko",
+      "body": "## Summary\n- add Remote ID Radar, a passive ASTM/OpenDroneID monitor for the WiFi Pineapple Pager\n- decode Remote ID from Wi-Fi Beacon vendor elements, Wi-Fi NAN action frames, and Bluetooth Service Data UUID `0xFFFA`\n- provide live aircraft tracking, device details, GPS-relative distance and bearing, persistent censor mode, and session loot\n\n## Details\nRemote ID Radar monitors the Pager’s existing Wi-Fi monitor interface and observes the stock `blue5` Bluetooth scan without replacing or interrupting PineAP or Bluetooth services.\n\nThe UI displays available UAS ID, aircraft type and state, RSSI, transport, channel, location, altitude, operator information, and active/lost status. Wi-Fi and Bluetooth observations advertising the same UAS ID are merged into one record.\n\nWi-Fi monitoring temporarily tunes `wlan1mon` to Remote ID channel 6 and restores the previous channel when the payload stops. No persistent PineAP configuration is changed.\n\nAn optional censor mode masks UAS IDs, operator IDs, and MAC-address fallbacks in the Pager UI. The setting persists across payload restarts. Censoring is display-only; JSONL, CSV, and GPX loot retains complete records for authorized analysis.\n\n## Verification\n- 19 automated decoder, parser, merge, lifecycle, channel-control, and censoring tests pass\n- physically detected a DJI aircraft over Wi-Fi Beacon Remote ID on channel 6\n- physically detected a standalone Ruko Remote ID module over Bluetooth\n- verified channel restoration, child-process cleanup, and healthy `pineapd` and `blue5` services after shutdown\n- validated on WiFi Pineapple Pager firmware 24.10.1\n\n## Notes\nBluetooth monitoring requires the stock `blue5` service to be running. The payload remains usable for Wi-Fi Remote ID if Bluetooth capture is unavailable.\n",
+      "createdAt": "2026-11-17T17:52:06Z",
+      "updatedAt": "2026-11-17T19:21:03Z",
+      "closedAt": null,
+      "mergedAt": null,
+      "htmlUrl": "https://github.com/hak5/wifipineapplepager-payloads/pull/400",
+      "repo": "wifipineapplepager-payloads",
+      "labels": [
+        {
+          "name": "Pending requested changes",
+          "color": "0e5bd2",
+          "description": "Awaiting changes from author"
+        }
+      ],
+      "comments": 0,
+      "draft": false
+    },
+    {
       "number": 145,
       "title": "optimized",
       "state": "open",
@@ -27909,12 +27934,18 @@
       "authorUrl": "https://github.com/CodeHedge",
       "body": "6Ghz Wardriving Node payload to accompany the Biscuit devices.",
       "createdAt": "2026-11-15T20:28:26Z",
-      "updatedAt": "2026-11-16T15:08:28Z",
+      "updatedAt": "2026-11-17T19:17:17Z",
       "closedAt": null,
       "mergedAt": null,
       "htmlUrl": "https://github.com/hak5/wifipineapplepager-payloads/pull/396",
       "repo": "wifipineapplepager-payloads",
-      "labels": [],
+      "labels": [
+        {
+          "name": "Pending requested changes",
+          "color": "0e5bd2",
+          "description": "Awaiting changes from author"
+        }
+      ],
       "comments": 0,
       "draft": false
     },
@@ -28162,7 +28193,7 @@
       "authorUrl": "https://github.com/h4d35x0",
       "body": "Browse installed themes, preview their images on screen, and activate one (UCI + UI restart). Also previews the images in a theme PR and hands installs off to PullThemePR. Missing theme files are restored from the built-in wargames theme; paths with a '..' segment are ignored so a theme cannot make the payload write outside its own directory.",
       "createdAt": "2026-11-10T19:22:36Z",
-      "updatedAt": "2026-11-10T19:22:36Z",
+      "updatedAt": "2026-11-17T19:43:23Z",
       "closedAt": null,
       "mergedAt": null,
       "htmlUrl": "https://github.com/hak5/wifipineapplepager-payloads/pull/392",
@@ -28181,12 +28212,18 @@
       "authorUrl": "https://github.com/justcallmekoko",
       "body": "## Summary\n- add a standalone Pager payload that scans 6 GHz preferred scanning channels and forwards observations to a nearby C5 Wardriver Core\n- provide on-device Core discovery, explicit pairing, persistent configuration, ACK tracking, bounded queuing, deduplication, and radio-state restoration\n- require Pager 2.0.0 with `python3-light` and C5 Wardriver v2.4.1 or newer operating in unencrypted Core mode\n- validated on physical Pager and C5 hardware, with 16 automated payload tests passing\n",
       "createdAt": "2026-11-10T18:47:09Z",
-      "updatedAt": "2026-11-10T18:47:09Z",
+      "updatedAt": "2026-11-17T19:41:52Z",
       "closedAt": null,
       "mergedAt": null,
       "htmlUrl": "https://github.com/hak5/wifipineapplepager-payloads/pull/391",
       "repo": "wifipineapplepager-payloads",
-      "labels": [],
+      "labels": [
+        {
+          "name": "Pending requested changes",
+          "color": "0e5bd2",
+          "description": "Awaiting changes from author"
+        }
+      ],
       "comments": 0,
       "draft": false
     },
@@ -28699,7 +28736,7 @@
       "authorUrl": "https://github.com/spywill",
       "body": "Free Online AI Assistant for the Hak5 WiFi Pineapple Pager\n\nPager AI Chat brings an online AI assistant directly to your Hak5 WiFi Pineapple Pager. Ask questions, get answers, and continue a conversation right from your device — without needing to configure your own API key.\n\nPowered by Vireonix AI, this payload uses Bash and the Pager's built-in interface commands to provide a simple, interactive AI chat experience.",
       "createdAt": "2026-10-29T16:30:20Z",
-      "updatedAt": "2026-11-11T10:29:00Z",
+      "updatedAt": "2026-11-17T15:36:57Z",
       "closedAt": null,
       "mergedAt": null,
       "htmlUrl": "https://github.com/hak5/wifipineapplepager-payloads/pull/381",
