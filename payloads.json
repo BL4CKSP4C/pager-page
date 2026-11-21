@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-21T12:05:52.695Z",
+  "fetchedAt": "2026-11-21T20:22:17.922Z",
   "categories": {
     "alerts": {
       "name": "alerts",
@@ -28324,6 +28324,44 @@
   ],
   "totalRingtones": 101,
   "pullRequests": [
+    {
+      "number": 152,
+      "title": "Add edgrunners theme",
+      "state": "open",
+      "merged": false,
+      "author": "sinXne0",
+      "authorAvatar": "https://avatars.githubusercontent.com/u/195513254?v=4",
+      "authorUrl": "https://github.com/sinXne0",
+      "body": "Adds the Edgrunners (Neon Afterlife) Pager theme.\\n\\n- Theme folder: `themes/edgrunners/`\\n- Includes `theme.json`, `README.md`, assets, and components\\n- Verified JSON and asset/component references resolve",
+      "createdAt": "2026-11-21T17:55:24Z",
+      "updatedAt": "2026-11-21T17:55:24Z",
+      "closedAt": null,
+      "mergedAt": null,
+      "htmlUrl": "https://github.com/hak5/wifipineapplepager-themes/pull/152",
+      "repo": "wifipineapplepager-themes",
+      "labels": [],
+      "comments": 0,
+      "draft": false
+    },
+    {
+      "number": 151,
+      "title": "Add Edgerunners Detail Glitch theme",
+      "state": "open",
+      "merged": false,
+      "author": "sinXne0",
+      "authorAvatar": "https://avatars.githubusercontent.com/u/195513254?v=4",
+      "authorUrl": "https://github.com/sinXne0",
+      "body": "Adds the Edgerunners Detail Glitch theme.\n\n- 135 component definitions and 167 PNG assets\n- Six keyboard modes, dashboard, alerts, recon, payload, PineAP, portal, settings and power screens\n- Built for Pager firmware 2.0 with theme framework 0.9\n- All component, asset, palette and template references resolve",
+      "createdAt": "2026-11-21T14:06:23Z",
+      "updatedAt": "2026-11-21T14:06:23Z",
+      "closedAt": null,
+      "mergedAt": null,
+      "htmlUrl": "https://github.com/hak5/wifipineapplepager-themes/pull/151",
+      "repo": "wifipineapplepager-themes",
+      "labels": [],
+      "comments": 0,
+      "draft": false
+    },
     {
       "number": 150,
       "title": "Add 40k theme",
