@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-23T17:21:55.645Z",
+  "fetchedAt": "2026-11-24T03:47:18.452Z",
   "categories": {
     "alerts": {
       "name": "alerts",
@@ -15431,20 +15431,23 @@
     },
     {
       "name": "dedsec",
-      "title": "Dedsec",
+      "title": "DedSec",
       "author": "Ser0ka",
-      "description": "A Theme for the Hak5 pineapple pager - inspired by Watchdogs 2 dedsec  > **Note:** Still WIP! Check out the new dashboard: ",
-      "readme": "A Theme for the Hak5 pineapple pager - inspired by Watchdogs 2 dedsec \n\n> **Note:** Still WIP!\n\nCheck out the new dashboard: \n\nLive\nhttps://youtube.com/shorts/Akzyx11bdaM\n\nVirtual Pager\nhttps://youtube.com/shorts/jum2Mt82ux0\n\nInstalling Pager Themes\n\nTo install a new theme, simply copy it to /root/themes/, or /mmc/root/themes/ (Create the themes directory if it doesn't exist yet).\n",
+      "description": "A theme for the Hak5 WiFi Pineapple Pager inspired by Watch Dogs 2 and the DedSec crew. - **Author:** Ser0ka - **2.0.0 update:** wickednull",
+      "readme": "# DedSec\n\nA theme for the Hak5 WiFi Pineapple Pager inspired by Watch Dogs 2 and the DedSec crew.\n\n- **Author:** Ser0ka\n- **2.0.0 update:** wickednull\n- **Theme version:** 2.0.0\n- **Firmware:** WiFi Pineapple Pager 2.0.0\n- **Pager Portal art:** adapted from the Darkseclabz Glitch theme assets\n\n## Features\n\n- Custom DedSec dashboard with a glitch-art tablet layout\n- Pager Portal screens for payloads, updates, and theme management\n- Bluetooth recon screens and status bar\n- Native GPS, advanced GPS, and WiGLE status support\n- Quick Settings panel\n- Updated 2.0 recon, settings, alert, and payload screens\n- Explain screens for settings, recon, and PineAP options\n- Custom boot, payload launch, and WiGLE animations\n\n## Notes\n\n- The main dashboard keeps the WiGLE shortcut and adds a dedicated **PORTAL**\n  button below it for Pager Portal.\n- WiGLE mode and GPS options are also available from Settings and Recon.\n- Pager Portal theme browsing and updating are placeholders in firmware 2.0.0\n  and are presented as \"Coming soon\" by the stock theme.\n\n## Installing Pager Themes\n\nTo install this theme, copy the `dedsec` directory to `/root/themes/`, or\n`/mmc/root/themes/` (create the `themes` directory if it does not exist yet).\n",
       "themeJson": {
+        "theme_name": "DedSec",
+        "_comment": "DedSec theme by Ser0ka. Updated for WiFi Pineapple Pager firmware 2.0.0 by wickednull.",
         "author": "Ser0ka",
-        "theme_version": "1.0",
-        "theme_framework_version": "0.5",
+        "theme_version": "2.0.0",
+        "theme_framework_version": "0.9",
         "status_bars": {
           "default": "components/status_bars/status_bar.json",
           "network": "components/status_bars/status_bar_network.json",
           "recon": "components/status_bars/status_bar_recon.json",
           "min": "components/status_bars/status_bar_min.json",
-          "gps": "components/status_bars/status_bar_gps.json"
+          "gps": "components/status_bars/status_bar_gps.json",
+          "bt_recon": "components/status_bars/status_bar_bt_recon.json"
         },
         "generic_menus": {
           "tutorial": "components/tutorial.json",
@@ -15477,13 +15480,36 @@
           "recon_selected_ap_client_menu": "components/recon/recon_selected_ap_client_menu.json",
           "pineap_menu": "components/dashboards/dashboard_pineap.json",
           "settings_menu": "components/dashboards/dashboard_settings.json",
-          "wigle_menu": "components/dashboards/dashboard_wigle.json"
+          "wigle_menu": "components/dashboards/dashboard_wigle.json",
+          "quick_settings": "components/dashboards/quick_settings.json",
+          "alerts_dashboard_explained": "components/dashboards/dashboard_alerts_explained.json",
+          "pineap_pineap_submenu_explained": "components/settings/submenu_pineap_pineap_explained.json",
+          "pineap_evilwpa_submenu_explained": "components/settings/submenu_pineap_evilwpa_explained.json",
+          "pineap_filters_submenu_explained": "components/settings/submenu_pineap_filters_explained.json",
+          "pineap_openap_submenu_explained": "components/settings/submenu_pineap_openap_explained.json",
+          "pineap_ssidpool_submenu_explained": "components/settings/submenu_pineap_ssidpool_explained.json",
+          "settings_general_submenu_explained": "components/settings/submenu_settings_general_explained.json",
+          "settings_display_submenu_explained": "components/settings/submenu_settings_display_explained.json",
+          "settings_ringtone_submenu_explained": "components/settings/submenu_settings_ringtone_explained.json",
+          "settings_network_submenu_explained": "components/settings/submenu_settings_network_explained.json",
+          "settings_bluetooth_submenu": "components/settings/submenu_settings_bluetooth.json",
+          "settings_bluetooth_submenu_explained": "components/settings/submenu_settings_bluetooth_explained.json",
+          "settings_system_submenu_explained": "components/settings/submenu_settings_system_explained.json",
+          "settings_gps_advanced": "components/settings/submenu_settings_gps_advanced.json",
+          "settings_gps_advanced_explained": "components/settings/submenu_settings_gps_advanced_explained.json",
+          "recon_new_scan_submenu": "components/recon/recon_new_scan_submenu.json",
+          "bt_recon_selected_device": "components/recon/bt_recon_selected_device.json",
+          "bt_recon_advertising_data": "components/recon/bt_recon_advertising_data.json",
+          "pager_portal_dashboard": "components/dashboards/dashboard_pager_portal.json",
+          "pager_portal_update_payloads_dashboard": "components/pager_portal/dashboard_pager_portal_update_payloads.json",
+          "pager_portal_themes_dashboard": "components/pager_portal/dashboard_pager_portal_themes.json",
+          "pager_portal_get_payloads_dashboard": "components/pager_portal/pager_portal_get_payloads_dashboard.json",
+          "pager_portal_view_payload_details": "components/pager_portal/pager_portal_view_payload_info.json",
+          "pager_portal_view_updatable_payload_details": "components/pager_portal/pager_portal_view_updatable_payload_info.json",
+          "pager_portal_view_installed_payload_details": "components/pager_portal/pager_portal_view_installed_payload_info.json"
         },
         "option_dialogs": {
           "option_dialog": "components/dialogs/ui_option_dialog.json",
-          "option_dialog_recon": "components/dialogs/ui_option_dialog_recon.json",
-          "option_dialog_alerts": "components/dialogs/ui_option_dialog_alerts.json",
-          "option_dialog_payloads": "components/dialogs/ui_option_dialog_payloads.json",
           "option_dialog_narrow": "components/dialogs/ui_option_dialog_narrow.json"
         },
         "launch_payload_dialog_path": "components/dialogs/launch_payload_dialog.json",
@@ -15563,7 +15589,7 @@
           "payload_title": "components/templates/payload_title.json",
           "list_count": "components/templates/list_count.json",
           "list_page_total": "components/templates/list_page_total.json",
-          "list_page_current": "components/templates/list_page_total.json",
+          "list_page_current": "components/templates/list_page_current.json",
           "list_pagination_label": "components/templates/list_pagination_label.json"
         },
         "radio_templates": {
@@ -15572,7 +15598,8 @@
         },
         "signal_templates": {
           "signal": "components/templates/signal.json",
-          "selected_signal": "components/templates/selected_signal.json"
+          "selected_signal": "components/templates/selected_signal.json",
+          "bt_signal": "components/templates/bt_signal.json"
         },
         "color_palette": {
           "black": {
@@ -15724,6 +15751,11 @@
             "r": 230,
             "g": 230,
             "b": 220
+          },
+          "white": {
+            "r": 255,
+            "g": 255,
+            "b": 255
           }
         },
         "_unused": {
@@ -15739,7 +15771,16 @@
             "test2": "/root/payloads/user/cat1/test2"
           },
           "simple_images": {}
-        }
+        },
+        "pager_portal_payloads_dashboard": "components/pager_portal/dashboard_pager_portal_payloads.json",
+        "pager_portal_alert_payload_categories": "components/pager_portal/pager_portal_get_alert_payloads.json",
+        "pager_portal_user_payload_categories": "components/pager_portal/pager_portal_get_user_payloads.json",
+        "pager_portal_recon_payload_categories": "components/pager_portal/pager_portal_get_recon_payloads.json",
+        "pager_portal_installed_payloads_list": "components/pager_portal/pager_portal_installed_payloads_list.json",
+        "pager_portal_update_payloads_list": "components/pager_portal/pager_portal_update_payloads_list.json",
+        "pager_portal_get_payloads_for_category_list": "components/pager_portal/pager_portal_get_payloads_for_category_list.json",
+        "duckyscript_list_picker": "components/dialogs/duckyscript_list_picker.json",
+        "bt_recon_list_path": "components/recon/bt_recon_results_list.json"
       },
       "files": [
         "README",
@@ -22613,17 +22654,17 @@
     {
       "name": "netrunner",
       "title": "Netrunner",
-      "author": "DocVoom",
-      "description": "Theme for the WIFI-Pineapple Pager based off of the **Cyberpunk 2077** Quickhacks system. ![Boot](screens/Screenshot_Netrunner_boot.png) ![Dashboard](screens/Screenshot_Netrunner_Dashboard.png)",
-      "readme": "# NETRUNNER\n### Author: Doc Voom\n\nTheme for the WIFI-Pineapple Pager based off of the **Cyberpunk 2077** Quickhacks system.\n\n![Boot](screens/Screenshot_Netrunner_boot.png)\n![Dashboard](screens/Screenshot_Netrunner_Dashboard.png)\n![Payloads](screens/Screenshot_Netrunner_Payloads.png)\n![Launch Payload](screens/Screenshot_Netrunner_Launch.png)\n![Settings](screens/Screenshot_Netrunner_Settings.png)\n![Power Menu](screens/Screenshot_Netrunner_Power.png)\n",
+      "author": "Doc Voom",
+      "description": "Theme for the WIFI-Pineapple Pager based off of the **Cyberpunk 2077** Quickhacks system.  **Updated for firmware 2.0** - Complete overhaul of the graphics including backgrounds, menus, radio, and toggles",
+      "readme": "# NETRUNNER (Version 2.0)\n### Author: Doc Voom\n\nTheme for the WIFI-Pineapple Pager based off of the **Cyberpunk 2077** Quickhacks system.\n\n## Version 2.0 Updates\n **Updated for firmware 2.0**\n- Complete overhaul of the graphics including backgrounds, menus, radio, and toggles\n- All new layout for PineAP and Settings screens\n- 24-hour clock option is on the second page of the Date/Time settings\n- Pager Portal is located in Settings > Updates\n- This version does not include the \"Explained\" screens\n\n![Boot](screens/Screenshot_Netrunner_boot.png)\n![Dashboard](screens/Screenshot_Netrunner_Dashboard.png)\n![Payloads](screens/Screenshot_Netrunner_Payloads.png)\n![Settings](screens/Screenshot_Netrunner_PineAP.png)\n![Power Menu](screens/Screenshot_Netrunner_Power.png)\n",
       "themeJson": {
-        "author": "DocVoom",
-        "theme_version": "1.0",
-        "theme_framework_version": "0.5",
+        "theme_version": "2.0.0",
+        "theme_framework_version": "0.9",
         "status_bars": {
           "default": "components/status_bars/status_bar.json",
           "network": "components/status_bars/status_bar_network.json",
           "recon": "components/status_bars/status_bar_recon.json",
+          "bt_recon": "components/status_bars/status_bar_bt_recon.json",
           "min": "components/status_bars/status_bar_min.json",
           "gps": "components/status_bars/status_bar_gps.json"
         },
@@ -22634,6 +22675,7 @@
           "client_mode_wizard": "components/client_mode_wizard.json",
           "evilwpa_wizard": "components/pineap/evilwpa_wizard.json",
           "power_menu": "components/dashboards/power_menu.json",
+          "quick_settings": "components/dashboards/quick_settings.json",
           "regulatory": "components/settings/regulatory.json",
           "dashboard_path": "components/dashboards/netrunner_dashboard.json",
           "alerts_dashboard": "components/dashboards/dashboard_alerts.json",
@@ -22646,26 +22688,43 @@
           "settings_display_submenu": "components/settings/submenu_settings_display.json",
           "settings_ringtone_submenu": "components/settings/submenu_settings_ringtone.json",
           "settings_network_submenu": "components/settings/submenu_settings_network.json",
+          "settings_bluetooth_submenu": "components/settings/submenu_settings_bluetooth.json",
           "settings_system_submenu": "components/settings/submenu_settings_system.json",
           "settings_datetime_submenu": "components/settings/submenu_settings_datetime.json",
           "settings_gps_submenu": "components/settings/submenu_settings_gps.json",
+          "settings_gps_advanced": "components/settings/submenu_settings_gps_advanced.json",
           "settings_updates_submenu": "components/settings/submenu_settings_updates.json",
           "settings_help_submenu": "components/settings/submenu_settings_help.json",
           "settings_about_submenu": "components/settings/submenu_settings_about.json",
           "recon_settings": "components/recon/recon_settings.json",
           "recon_band_settings": "components/recon/recon_band_settings.json",
+          "recon_new_scan_submenu": "components/recon/recon_new_scan_submenu.json",
           "recon_selected_ap_menu": "components/recon/recon_selected_ap_menu.json",
           "recon_selected_ap_client_menu": "components/recon/recon_selected_ap_client_menu.json",
+          "bt_recon_selected_device": "components/recon/bt_recon_selected_device.json",
+          "bt_recon_advertising_data": "components/recon/bt_recon_advertising_data.json",
           "pineap_menu": "components/dashboards/dashboard_pineap.json",
-          "settings_menu": "components/dashboards/dashboard_settings.json"
+          "settings_menu": "components/dashboards/dashboard_settings.json",
+          "pager_portal_dashboard": "components/dashboards/dashboard_pager_portal.json",
+          "pager_portal_update_payloads_dashboard": "components/pager_portal/dashboard_pager_portal_update_payloads.json",
+          "pager_portal_themes_dashboard": "components/pager_portal/dashboard_pager_portal_themes.json",
+          "pager_portal_get_payloads_dashboard": "components/pager_portal/pager_portal_get_payloads_dashboard.json",
+          "pager_portal_view_payload_details": "components/pager_portal/pager_portal_view_payload_info.json",
+          "pager_portal_view_updatable_payload_details": "components/pager_portal/pager_portal_view_updatable_payload_info.json",
+          "pager_portal_view_installed_payload_details": "components/pager_portal/pager_portal_view_installed_payload_info.json"
         },
+        "pager_portal_payloads_dashboard": "components/pager_portal/dashboard_pager_portal_payloads.json",
+        "pager_portal_alert_payload_categories": "components/pager_portal/pager_portal_get_alert_payloads.json",
+        "pager_portal_user_payload_categories": "components/pager_portal/pager_portal_get_user_payloads.json",
+        "pager_portal_recon_payload_categories": "components/pager_portal/pager_portal_get_recon_payloads.json",
+        "pager_portal_installed_payloads_list": "components/pager_portal/pager_portal_installed_payloads_list.json",
+        "pager_portal_update_payloads_list": "components/pager_portal/pager_portal_update_payloads_list.json",
+        "pager_portal_get_payloads_for_category_list": "components/pager_portal/pager_portal_get_payloads_for_category_list.json",
         "option_dialogs": {
           "option_dialog": "components/dialogs/ui_option_dialog.json",
-          "option_dialog_recon": "components/dialogs/ui_option_dialog_recon.json",
-          "option_dialog_alerts": "components/dialogs/ui_option_dialog_alerts.json",
-          "option_dialog_payloads": "components/dialogs/ui_option_dialog_payloads.json",
           "option_dialog_narrow": "components/dialogs/ui_option_dialog_narrow.json"
         },
+        "duckyscript_list_picker": "components/dialogs/duckyscript_list_picker.json",
         "launch_payload_dialog_path": "components/dialogs/launch_payload_dialog.json",
         "payloads_dashboard_path": "components/dashboards/dashboard_payloads.json",
         "payloads_for_category_list_path": "components/payloads_for_category_list.json",
@@ -22692,6 +22751,7 @@
           "recon_list": "components/recon/recon_results_list.json"
         },
         "recon_ap_clients_list_path": "components/recon/recon_ap_clients_list.json",
+        "bt_recon_list_path": "components/recon/bt_recon_results_list.json",
         "edit_string_dialog_path": "components/dialogs/edit_string_dialog.json",
         "edit_ip_dialog_path": "components/dialogs/edit_ip_dialog.json",
         "edit_mac_dialog_path": "components/dialogs/edit_mac_dialog.json",
@@ -22709,42 +22769,28 @@
         "virtual_pager_info_path": "assets/virt_qr.png",
         "toggle_templates": {
           "toggle": "components/templates/toggle.json",
-          "green_toggle": "components/templates/green_toggle.json",
-          "yellow_toggle": "components/templates/yellow_toggle.json",
           "disabled_toggle": "components/templates/disabled_toggle.json",
-          "checkbox": "components/templates/checkbox.json",
-          "pineap_filter_mode": "components/templates/pineap_filter_mode.json",
-          "disabled_pineap_filter_mode": "components/templates/disabled_pineap_filter_mode.json"
+          "checkbox": "components/templates/checkbox.json"
         },
         "string_templates": {
           "recon_payload_title": "components/templates/recon_payload_title.json",
           "recon_payload_title_selected": "components/templates/recon_payload_title_selected.json",
           "alert_payload_title": "components/templates/alert_payload_title.json",
           "alert_payload_title_selected": "components/templates/alert_payload_title_selected.json",
-          "client_ssid": "components/templates/client_ssid.json",
-          "client_ssid_selected": "components/templates/client_ssid_selected.json",
-          "client_mac": "components/templates/client_mac.json",
-          "client_mac_selected": "components/templates/client_mac_selected.json",
           "timestamp": "components/templates/timestamp.json",
-          "spinner_text": "components/templates/spinner_text.json",
           "string": "components/templates/string.json",
           "payload_name": "components/templates/payload_name_in_list.json",
           "payload_name_selected": "components/templates/payload_name_in_list_selected.json",
           "alert_info_dialog_text": "components/templates/alert_info_dialog_text.json",
           "string_title": "components/templates/string_title.json",
-          "selected_string": "components/templates/selected_string.json",
           "error_text": "components/templates/error_text.json",
           "confirmation_dialog_text": "components/templates/confirmation_dialog_text.json",
           "option_dialog_string": "components/templates/option_dialog_string.json",
           "option_dialog_string_selected": "components/templates/option_dialog_string_selected.json",
           "ssid_pool_string": "components/templates/ssid_pool_string.json",
           "ssid_pool_string_selected": "components/templates/ssid_pool_string_selected.json",
-          "network_filter_string": "components/templates/network_filter_string.json",
-          "network_filter_string_selected": "components/templates/network_filter_string_selected.json",
           "payload_title": "components/templates/payload_title.json",
           "list_count": "components/templates/list_count.json",
-          "list_page_total": "components/templates/list_page_total.json",
-          "list_page_current": "components/templates/list_page_total.json",
           "list_pagination_label": "components/templates/list_pagination_label.json"
         },
         "radio_templates": {
@@ -22752,8 +22798,8 @@
           "selected_radio": "components/templates/selected_radio.json"
         },
         "signal_templates": {
-          "signal": "components/templates/signal.json",
-          "selected_signal": "components/templates/selected_signal.json"
+          "selected_signal": "components/templates/selected_signal.json",
+          "bt_signal": "components/templates/bt_signal.json"
         },
         "color_palette": {
           "black": {
@@ -22767,14 +22813,14 @@
             "b": 249
           },
           "red": {
-            "r": 250,
-            "g": 72,
-            "b": 9
+            "r": 245,
+            "g": 45,
+            "b": 45
           },
           "dark_red": {
-            "r": 110,
-            "g": 31,
-            "b": 23
+            "r": 180,
+            "g": 15,
+            "b": 15
           },
           "yellow": {
             "r": 231,
@@ -22832,9 +22878,9 @@
             "b": 223
           },
           "dark_cyan": {
-            "r": 40,
-            "g": 120,
-            "b": 120
+            "r": 0,
+            "g": 148,
+            "b": 156
           },
           "purple": {
             "r": 132,
@@ -22925,6 +22971,7 @@
       "files": [
         "README.md",
         "assets",
+        "color_palette_preview.html",
         "components",
         "screens",
         "theme.json"
@@ -28325,6 +28372,25 @@
   "totalRingtones": 101,
   "pullRequests": [
     {
+      "number": 156,
+      "title": "rickandmorty: optimize theme assets",
+      "state": "closed",
+      "merged": true,
+      "author": "h4d35x0",
+      "authorAvatar": "https://avatars.githubusercontent.com/u/314847323?v=4",
+      "authorUrl": "https://github.com/h4d35x0",
+      "body": "Follow-up to #135: took the asset optimizer suggestion.\n\nRan the repo's own tools/compress_theme_assets.sh (pngquant, 64 colors) and tools/promote_compressed.sh on themes/rickandmorty, unmodified.\n\n- All 165 PNGs: 1.51 MiB -> 449.9 KiB (70.9% smaller)\n- 150 recompressed; 15 small icons were skipped by --skip-if-larger and are unchanged\n- Dimensions preserved, no non-PNG files touched\n\nTested on a Pager (2.0.0 stable): installed, UI restarted, screens checked (dashboard, boot animation, dialogs, keyboard, easter egg, preview). No theme load errors in uierrors.log.\n\nNot as small as the 289.9 KiB you got on stream, so your optimizer is more aggressive than the script; happy to re-run with whatever settings you used.\n",
+      "createdAt": "2026-11-23T17:55:29Z",
+      "updatedAt": "2026-11-23T22:47:42Z",
+      "closedAt": "2026-11-23T22:47:42Z",
+      "mergedAt": "2026-11-23T22:47:42Z",
+      "htmlUrl": "https://github.com/hak5/wifipineapplepager-themes/pull/156",
+      "repo": "wifipineapplepager-themes",
+      "labels": [],
+      "comments": 0,
+      "draft": false
+    },
+    {
       "number": 28,
       "title": "Add MESH.5 ringtones",
       "state": "open",
@@ -28364,7 +28430,7 @@
     },
     {
       "number": 409,
-      "title": "Add PagerMesh 1.0.0",
+      "title": "Add PagerMesh 1.0.1",
       "state": "open",
       "merged": false,
       "author": "SECT0101",
@@ -28372,7 +28438,7 @@
       "authorUrl": "https://github.com/SECT0101",
       "body": "PagerMesh puts Meshtastic on the WiFi Pineapple Pager. The Pager becomes the screen, keyboard, GPS and map for a Meshtastic radio: mesh chat with direct messages and conversations, a node list with range and bearing, an on-screen map with Navigate to, radio and channel settings (with a share QR code), traceroute, waypoints, mesh SIGINT with pcap / CSV export, an optional mesh ↔ TAK bridge and a browser web console.\n\nWorks with a Meshtastic radio connected one of three ways: the Glytch Mesh Mod, a Wi-Fi radio (Heltec V3 / V4, LilyGO T-Beam, Station G2…) or a USB radio.\n\nTested on a WiFi Pineapple Pager, firmware 2.0.0-stable, with a Heltec radio over Wi-Fi\nEvery package install (python3-light, the Glytch Meshtastic installer) asks first\nNo server, certificate, channel key or credential is included; each user enters their own\nSource and releases: https://github.com/SECT0101/PagerMesh",
       "createdAt": "2026-11-23T00:23:05Z",
-      "updatedAt": "2026-11-23T00:23:05Z",
+      "updatedAt": "2026-11-24T02:37:40Z",
       "closedAt": null,
       "mergedAt": null,
       "htmlUrl": "https://github.com/hak5/wifipineapplepager-payloads/pull/409",
@@ -28833,16 +28899,16 @@
     {
       "number": 143,
       "title": "DedSec theme update for 2.0.0",
-      "state": "open",
-      "merged": false,
+      "state": "closed",
+      "merged": true,
       "author": "wickednull",
       "authorAvatar": "https://avatars.githubusercontent.com/u/143050906?v=4",
       "authorUrl": "https://github.com/wickednull",
       "body": "I dont normally make themes but had to update my favorite much props to the original creator. PS. I tried my best",
       "createdAt": "2026-11-14T06:41:35Z",
-      "updatedAt": "2026-11-22T19:50:46Z",
-      "closedAt": null,
-      "mergedAt": null,
+      "updatedAt": "2026-11-23T22:46:58Z",
+      "closedAt": "2026-11-23T22:46:58Z",
+      "mergedAt": "2026-11-23T22:46:58Z",
       "htmlUrl": "https://github.com/hak5/wifipineapplepager-themes/pull/143",
       "repo": "wifipineapplepager-themes",
       "labels": [
@@ -29275,16 +29341,16 @@
     {
       "number": 132,
       "title": "Netrunner 2.0",
-      "state": "open",
-      "merged": false,
+      "state": "closed",
+      "merged": true,
       "author": "docvoom",
       "authorAvatar": "https://avatars.githubusercontent.com/u/31769820?v=4",
       "authorUrl": "https://github.com/docvoom",
       "body": "Update for the pager firmware 2.0",
       "createdAt": "2026-11-06T21:01:45Z",
-      "updatedAt": "2026-11-18T14:17:14Z",
-      "closedAt": null,
-      "mergedAt": null,
+      "updatedAt": "2026-11-23T22:45:49Z",
+      "closedAt": "2026-11-23T22:45:49Z",
+      "mergedAt": "2026-11-23T22:45:48Z",
       "htmlUrl": "https://github.com/hak5/wifipineapplepager-themes/pull/132",
       "repo": "wifipineapplepager-themes",
       "labels": [
