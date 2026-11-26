@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-26T03:56:23.935Z",
+  "fetchedAt": "2026-11-26T13:35:27.713Z",
   "categories": {
     "alerts": {
       "name": "alerts",
@@ -30482,7 +30482,7 @@
       "authorUrl": "https://github.com/jader242",
       "body": "This script runs hcxdumptool from a pager UI, allowing users to select frequency bands and save captured data.",
       "createdAt": "2026-11-18T04:00:37Z",
-      "updatedAt": "2026-11-18T22:30:45Z",
+      "updatedAt": "2026-11-26T06:47:03Z",
       "closedAt": null,
       "mergedAt": null,
       "htmlUrl": "https://github.com/hak5/wifipineapplepager-payloads/pull/401",
@@ -31366,7 +31366,7 @@
       "authorUrl": "https://github.com/spywill",
       "body": "Free Online AI Assistant for the Hak5 WiFi Pineapple Pager\n\nPager AI Chat brings an online AI assistant directly to your Hak5 WiFi Pineapple Pager. Ask questions, get answers, and continue a conversation right from your device — without needing to configure your own API key.\n\nPowered by Vireonix AI, this payload uses Bash and the Pager's built-in interface commands to provide a simple, interactive AI chat experience.",
       "createdAt": "2026-10-29T16:30:20Z",
-      "updatedAt": "2026-11-17T15:36:57Z",
+      "updatedAt": "2026-11-26T13:34:57Z",
       "closedAt": null,
       "mergedAt": null,
       "htmlUrl": "https://github.com/hak5/wifipineapplepager-payloads/pull/381",
