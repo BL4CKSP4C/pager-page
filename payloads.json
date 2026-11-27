@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-26T22:48:14.357Z",
+  "fetchedAt": "2026-11-27T06:40:37.980Z",
   "categories": {
     "alerts": {
       "name": "alerts",
@@ -30010,6 +30010,25 @@
   ],
   "totalRingtones": 250,
   "pullRequests": [
+    {
+      "number": 411,
+      "title": "Add Quartermaster: Wi-Fi, Bluetooth and LoRa mesh wardriver",
+      "state": "open",
+      "merged": false,
+      "author": "valleytechsolutions",
+      "authorAvatar": "https://avatars.githubusercontent.com/u/178694271?v=4",
+      "authorUrl": "https://github.com/valleytechsolutions",
+      "body": "Adds `library/user/reconnaissance/quartermaster`: Quartermaster, a Wi-Fi, Bluetooth LE and LoRa mesh wardriver with its own full-screen interface for the Pager.\n\n## What it does\n\n- **Wi-Fi wardriving:** reads every frame from PineAP's `wlan1mon` on 2.4, 5 and 6 GHz. It is read-only and never changes the channel, so PineAP keeps running.\n- **Bluetooth LE wardriving:** a raw HCI scan. It never connects or pairs.\n- **LoRa mesh nodes and LoRaWAN:** Meshtastic, MeshCore and LoRaWAN from any USB LoRa radio, found automatically: CH341 sticks (MeshToad, MeshStick, Glytch Mesh Mod), a radio run by `meshtasticd`, or a Meshtastic board on USB. Receive only.\n- **Logs and uploads:** WiGLE CSV logs in `/root/loot/quartermaster`, with uploads to WiGLE, WDGWars and Wardrift. Keys are entered on the Pager or from a phone, never in `payload.sh`.\n- **Drive Alerts:** Flock cameras, Axon body cameras, Meta glasses and more, with buzzer, vibration and LEDs.\n- **Recon:** a surveillance device survey.\n- **Screen:** a 480x222 interface for the D-pad. Hold red for 2 seconds to exit, and the screen goes back with `UI_RELEASE`.\n\n## Payload rules\n\n- **Header:** standard `payload.sh` header, Category Reconnaissance.\n- **No binaries and no staged downloads:** plain Python and Bash. Drawing goes straight to `/dev/fb0` with Pillow.\n- **Packages:** asks with `CONFIRMATION_DIALOG` before installing `python3`, `python3-pillow` and `python3-pyserial` to `/mmc` with `opkg -d mmc`.\n- **README:** controls, files and credits are in the payload's README. Source and tests are at https://github.com/valleytechsolutions/Quartermaster-Pager.\n\nTested on a WiFi Pineapple Pager.\n\n## Credits\n\nSquachWatch by Talking Sasquach (via SquachWatch-CYD by skizzophrenic, GPL-3.0), flock-you by colonelpanichacks (MIT), Dragon Detector (MIT), nyanBOX by jbohack, ESP32 Marauder by justcallmekoko, and Meshtastic's CH341 device configurations.\n\nGPL-3.0, Valleytech Solutions.",
+      "createdAt": "2026-11-27T04:10:06Z",
+      "updatedAt": "2026-11-27T04:10:06Z",
+      "closedAt": null,
+      "mergedAt": null,
+      "htmlUrl": "https://github.com/hak5/wifipineapplepager-payloads/pull/411",
+      "repo": "wifipineapplepager-payloads",
+      "labels": [],
+      "comments": 0,
+      "draft": false
+    },
     {
       "number": 29,
       "title": "Add PHREAK.5 ringtones",
